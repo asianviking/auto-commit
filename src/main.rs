@@ -222,7 +222,8 @@ async fn main() -> Result<(), ()> {
     let commit_data = &completion.choices[0].message.function_call;
     let commit_msg = serde_json::from_str::<Commit>(&commit_data.as_ref().unwrap().arguments)
         .expect("Couldn't parse model response.")
-        .to_string();
+        .to_string()
+        .to_lowercase();
 
     if cli.dry_run {
         info!("{}", commit_msg);
