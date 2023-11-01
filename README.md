@@ -1,6 +1,6 @@
 ![banner](https://user-images.githubusercontent.com/23558090/198913411-730bd7ff-3d9b-4a5e-831c-55691f97e11a.jpg)
 
-# Automagically-generated commit messages
+# Automagically-generated commit messages :)
 
 A CLI tool that generates commit messages from your staged changes, built in Rust and using [OpenAI's GPT-3.5](https://platform.openai.com/overview).
 
